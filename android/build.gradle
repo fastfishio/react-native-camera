@@ -30,6 +30,7 @@ android {
     multiDexEnabled true
     minSdkVersion safeExtGet('minSdkVersion', 21)
     targetSdkVersion safeExtGet('targetSdkVersion', 33)
+    missingDimensionStrategy 'react-native-camera', 'general'
   }
 
   flavorDimensions "react-native-camera"
