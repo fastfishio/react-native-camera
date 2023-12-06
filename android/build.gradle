@@ -15,7 +15,7 @@ buildscript {
 
     dependencies {
       //noinspection GradleDependency
-      classpath("com.android.tools.build:gradle:4.1.0")
+      classpath("com.android.tools.build:gradle")
     }
   }
 }
@@ -30,7 +30,7 @@ android {
     multiDexEnabled true
     minSdkVersion safeExtGet('minSdkVersion', 21)
     targetSdkVersion safeExtGet('targetSdkVersion', 33)
-    missingDimensionStrategy 'react-native-camera', 'general'
+   missingDimensionStrategy 'react-native-camera', 'mlkit'
   }
 
   flavorDimensions "react-native-camera"
@@ -60,6 +60,7 @@ repositories {
   jcenter()
   mavenCentral()
   maven { url "https://jitpack.io" }
+  maven { url "https://maven.google.com" } 
   maven {
     // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
     url "$rootDir/../node_modules/react-native/android"
