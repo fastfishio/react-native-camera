@@ -34,8 +34,8 @@
     "lint-staged": "^10.2.13",
     "pre-commit": "^1.2.2",
     "prettier": "^2.1.1",
-    "react": "16.13.1",
-    "react-native": "0.63.2",
+    "react": "18.2.0",
+    "react-native": "0.72.6",
     "semantic-release": "^17.1.1"
   },
   "homepage": "https://github.com/react-native-community/react-native-camera",
